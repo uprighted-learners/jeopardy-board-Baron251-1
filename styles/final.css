@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://media.distractify.com/brand-img/yifT6fx1B/0x0/final-jeopardy-1639404433135.jpeg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+	flex-direction: column;
+    margin-top: 200px;
+	align-items: center;
+	align-self: center;
+    border: 1px solid white;
+	padding-top: 3em;
+   padding-bottom: 3em;
+   padding-left: 3em;
+   padding-right: 3em;
+   color: white;
+   background-image: url(https://cdn.discordapp.com/attachments/684267405874429993/1044271562922143794/image.png);
+   background-size:cover;
+}
+
+table {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	
+}
+
+.gpi {
+text-align: center;
+}

@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://live.staticflickr.com/4143/4780851045_f2b32d31df_b.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 10px;
+}
+.Play{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    
+}

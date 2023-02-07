@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeopardy</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jeopardy</title>
+		<link rel="stylesheet" href="./styles/round.css" />
+	</head>
+	<body>
     <h1>Round One</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
-  </body>
+		
+  <div class="score">
+    <h2>Player 1 Score:</h2>
+    <h3>Player 1's turn</h3>
+    <h2>Player 2 Score:</h2>
+  </div>
+
+  
+		<!-- I get very particular about pixels. -->
+
+		<div class="container" style="height: 505px">
+			<table>
+				<!-- This bit is being screwy. Fix border not appearing on the table headers. -->
+				<tr class="categories">
+					<th>category row number</th>
+					<th>category row number</th>
+					<th>category row number</th>
+					<th>category row number</th>
+					<th>category row number</th>
+					<th>category row number</th>
+				</tr>
+			</table>
+			<table>
+				<td><button>100</button></td>
+				<td><button>100</button></td>
+				<td><button>100</button></td>
+				<td><button>100</button></td>
+				<td><button>100</button></td>
+				<td><button>100</button></td>
+			</table>
+			<table>
+				<td><button>200</button></td>
+				<td><button>200</button></td>
+				<td><button>200</button></td>
+				<td><button>200</button></td>
+				<td><button>200</button></td>
+				<td><button>200</button></td>
+			</table>
+			<table>
+				<td><button>300</button></td>
+				<td><button>300</button></td>
+				<td><button>300</button></td>
+				<td><button>300</button></td>
+				<td><button>300</button></td>
+				<td><button>300</button></td>
+			</table>
+			<table>
+				<td><button>400</button></td>
+				<td><button>400</button></td>
+				<td><button>400</button></td>
+				<td><button>400</button></td>
+				<td><button>400</button></td>
+				<td><button>400</button></td>
+			</table>
+			<table>
+				<td><button>500</button></td>
+				<td><button>500</button></td>
+				<td><button>500</button></td>
+				<td><button>500</button></td>
+				<td><button>500</button></td>
+				<td><button>500</button></td>
+			</table>
+		</div>
+    <div class="gpi">
+    <form action="####">
+      <input type="text" placeholder="Your answer here:">
+    </form>
+      <input type="button" value="Guess"></input>
+      <input type="button" value="Pass"></input>
+    </div>
+		<h3>Player 2 on deck</h3>
+
+		<!-- Admin navigation -->
+		<a href="http://127.0.0.1:5500/ptsb-jan-2023/Projects/jeopardy/index.html"
+			><button><b>Previous</b></button></a>
+		<a href="http://127.0.0.1:5500/ptsb-jan-2023/Projects/jeopardy/round-2.html"
+			><button><b>Next round</b></button></a>
+      <div class="foot">
+        <footer><!-- What to put here... -->A guy named Vaughn made this</footer>
+        </div>
+		<!-- Do not change the script source. Allows import/export to work. -->
+		<script src="./scripts/index.js" type="module"></script>
+	</body>
 </html>
