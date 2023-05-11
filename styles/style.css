@@ -13,6 +13,8 @@ h1{
 }
 button{
     padding: 10px;
+    width:fit-content;
+    align-self: center;
 }
 .Play{
     display: flex;
