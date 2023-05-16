@@ -38,6 +38,11 @@ h1 {
 	width: 780px;
 }
 
+th {
+	padding-left: 33px;
+	padding-right: 33px;
+}
+
 td {
 	background-image: url("/ptsb-jan-2023/Projects/jeopardy-board-Baron251-1/assets/eyeball.jpg");
 	background-size: contain;

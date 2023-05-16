@@ -205,7 +205,7 @@ const placeholderQuestions = [
   {
     category: "Mythology",
     question:
-      "What mytological creatures have women's faces and vultures' bodies?",
+      "What mythological creatures have women's faces and vultures' bodies?",
     answer: "Harpies",
   },
   {
@@ -280,7 +280,7 @@ const placeholderQuestions = [
   },
   {
     category: "General",
-    question: "What is the French word for &quot;hat&quot;?",
+    question: "What is the French word for `hat`?",
     answer: "Chapeau",
   },
   {

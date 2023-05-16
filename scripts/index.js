@@ -43,4 +43,165 @@ round1Animal.forEach((element, index) => {
 		// console.log("Questions: ", round1AnimalQ[0].question);
 	});
 });
+
+const round1ComputerQ = placeholderQuestions.slice(20, 26);
+
+const round1Computer = [...document.getElementsByClassName("computer")];
+round1Computer.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round1ComputerQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round1ComputerQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round1ComputerQ[0].question);
+	});
+});
+
+const round1MythologyQ = placeholderQuestions.slice(30, 36);
+
+const round1Mythology = [...document.getElementsByClassName("mythology")];
+round1Mythology.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round1MythologyQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round1MythologyQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round1MythologyQ[0].question);
+	});
+});
+
+
+const round1HistoryQ = placeholderQuestions.slice(40, 46);
+
+const round1History = [...document.getElementsByClassName("history")];
+round1History.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round1HistoryQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round1HistoryQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round1HistoryQ[0].question);
+	});
+});
+
+const round1GeneralQ = placeholderQuestions.slice(50, 56);
+
+const round1General = [...document.getElementsByClassName("general")];
+round1General.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round1GeneralQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round1GeneralQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round1GeneralQ[0].question);
+	});
+});
 // ! Round 2 Questions
+
+const round2NatureQ = placeholderQuestions.slice(5, 10);
+
+const round2Nature = [...document.getElementsByClassName("nature")];
+round2Nature.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round2NatureQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round2NatureQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round2NatureQ[0].question);
+	});
+});
+
+const round2AnimalQ = placeholderQuestions.slice(15, 20);
+
+const round2Animal = [...document.getElementsByClassName("animal")];
+round2Animal.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round2AnimalQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round2AnimalQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round2AnimalQ[0].question);
+	});
+});
+
+const round2ComputerQ = placeholderQuestions.slice(25, 30);
+
+const round2Computer = [...document.getElementsByClassName("computer")];
+round2Computer.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round2ComputerQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round2ComputerQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round2ComputerQ[0].question);
+	});
+});
+
+const round2MythologyQ = placeholderQuestions.slice(35, 40);
+
+const round2Mythology = [...document.getElementsByClassName("mythology")];
+round2Mythology.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round2MythologyQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round2MythologyQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round2MythologyQ[0].question);
+	});
+});
+
+const round2HistoryQ = placeholderQuestions.slice(45, 50);
+
+const round2History = [...document.getElementsByClassName("history")];
+round2History.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round2HistoryQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round2HistoryQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round2HistoryQ[0].question);
+	});
+});
+
+const round2GeneralQ = placeholderQuestions.slice(55, 60);
+
+const round2General = [...document.getElementsByClassName("general")];
+round2General.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		e.preventDefault();
+		for (let i = 0; i < round2GeneralQ.length; i++) {
+			if (i === index) {
+				let currentQuestion = round2GeneralQ[i].question;
+				question[0].innerText = currentQuestion;
+			}
+		}
+		// console.log("Questions: ", round2GeneralQ[0].question);
+	});
+});
