@@ -10,6 +10,23 @@ console.log(placeholderQuestions[0]);
 //! When I need a question/answer I can iterate over the array
 let question = document.getElementsByClassName("question");
 
+// ! Input Answer
+
+const answerField = document.getElementById("answerField");
+
+const form = document.querySelector("form");
+
+function checkAnswer(currentAnswer) {
+	form.addEventListener("submit", (e) => {
+		// e.preventDefault();
+		if(answerField.value === currentAnswer) {
+			console.log("Correct!")
+		} else {
+			console.log("Incorrect.")
+		}
+	});
+}
+
 // ! Round 1 Questions
 
 const round1NatureQ = placeholderQuestions.slice(0, 5);
@@ -76,7 +93,6 @@ round1Mythology.forEach((element, index) => {
 	});
 });
 
-
 const round1HistoryQ = placeholderQuestions.slice(40, 46);
 
 const round1History = [...document.getElementsByClassName("history")];
@@ -112,7 +128,7 @@ round1General.forEach((element, index) => {
 
 const round2NatureQ = placeholderQuestions.slice(5, 10);
 
-const round2Nature = [...document.getElementsByClassName("nature")];
+const round2Nature = [...document.getElementsByClassName("nature2")];
 round2Nature.forEach((element, index) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
@@ -128,7 +144,7 @@ round2Nature.forEach((element, index) => {
 
 const round2AnimalQ = placeholderQuestions.slice(15, 20);
 
-const round2Animal = [...document.getElementsByClassName("animal")];
+const round2Animal = [...document.getElementsByClassName("animal2")];
 round2Animal.forEach((element, index) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
@@ -144,7 +160,7 @@ round2Animal.forEach((element, index) => {
 
 const round2ComputerQ = placeholderQuestions.slice(25, 30);
 
-const round2Computer = [...document.getElementsByClassName("computer")];
+const round2Computer = [...document.getElementsByClassName("computer2")];
 round2Computer.forEach((element, index) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
@@ -160,7 +176,7 @@ round2Computer.forEach((element, index) => {
 
 const round2MythologyQ = placeholderQuestions.slice(35, 40);
 
-const round2Mythology = [...document.getElementsByClassName("mythology")];
+const round2Mythology = [...document.getElementsByClassName("mythology2")];
 round2Mythology.forEach((element, index) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
@@ -176,7 +192,7 @@ round2Mythology.forEach((element, index) => {
 
 const round2HistoryQ = placeholderQuestions.slice(45, 50);
 
-const round2History = [...document.getElementsByClassName("history")];
+const round2History = [...document.getElementsByClassName("history2")];
 round2History.forEach((element, index) => {
 	element.addEventListener("click", (e) => {
 		e.preventDefault();
@@ -192,14 +208,18 @@ round2History.forEach((element, index) => {
 
 const round2GeneralQ = placeholderQuestions.slice(55, 60);
 
-const round2General = [...document.getElementsByClassName("general")];
+const round2General = [...document.getElementsByClassName("general2")];
 round2General.forEach((element, index) => {
 	element.addEventListener("click", (e) => {
-		e.preventDefault();
+		// e.preventDefault();
 		for (let i = 0; i < round2GeneralQ.length; i++) {
+			// console.log("Round 2 General Q: ", round2GeneralQ[i])
 			if (i === index) {
-				let currentQuestion = round2GeneralQ[i].question;
-				question[0].innerText = currentQuestion;
+				let currentQuestion = round2GeneralQ[i];
+				let currentAnswer = currentQuestion.answer
+				console.log("Current Question:", currentQuestion);
+				question[0].innerText = currentQuestion.question;
+				checkAnswer(currentAnswer)
 			}
 		}
 		// console.log("Questions: ", round2GeneralQ[0].question);
