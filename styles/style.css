@@ -1,3 +1,5 @@
+/* ! CSS For the landing page */
+/* Background image */
 body{
     background-image: url(https://live.staticflickr.com/4143/4780851045_f2b32d31df_b.jpg);
     background-size: cover;
@@ -7,6 +9,7 @@ body{
 h1{
     text-align: center;
 }
+/* The div that holds Alex Trebek. */
 .container{
     display: flex;
     justify-content: center;

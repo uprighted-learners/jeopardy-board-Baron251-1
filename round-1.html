@@ -8,20 +8,19 @@
 		<link rel="stylesheet" href="./styles/round.css" />
 	</head>
 	<body>
-    <h1>Round One</h1>
-		
-  <div class="score">
-    <h2>Player 1 Score:</h2>
-    <h3>Player 1's turn</h3>
-    <h2>Player 2 Score:</h2>
-  </div>
+		<h1>Round One</h1>
 
-  
-		<!-- I get very particular about pixels. -->
 
+		<div class="score">
+			<h2>Player 1 Score:</h2>
+			<h3>Player 1's turn</h3>
+			<h2>Player 2 Score:</h2>
+		</div>
+
+		<!-- Contains all of the questions and categories AND points -->
 		<div class="container" style="height: 505px">
 			<table>
-				<!-- This bit is being screwy. Fix border not appearing on the table headers. -->
+				<!-- Each table is a different row with different points -->
 				<tr class="categories">
 					<th>Nature</th>
 					<th>Animals</th>
@@ -72,28 +71,32 @@
 				<td><button class="general">500</button></td>
 			</table>
 		</div>
+		
+		<!-- Will display the question selected based on the category and points -->
 		<div class="qBox">
 			<h3 class="question">Pick a category, and point value</h3>
 		</div>
-    <div class="gpi">
-    <form action="####">
-      <input type="text" id="answerField" placeholder="Your answer here:">
-      <input class="submitButton" type="submit">
-      <button>Pass</button>
-    </form>
-    </div>
+		
+		<div class="gpi">
+			<form action="####">
+				<input type="text" id="answerField" placeholder="Your answer here:" />
+				<input class="submitButton" type="submit" />
+				<button>Pass</button>
+			</form>
+		</div>
 		<h3>Player 2 on deck</h3>
 
 		<!-- "Admin" navigation -->
-			<button>
-				<a href="index.html">Previous</a>
-			  </button>
-			  <button>
-				<a href="round-2.html">Next Round</a>
-			  </button>
-      <div class="foot">
-        <footer><!-- What to put here... -->A guy named Vaughn made this</footer>
-        </div>
+		<button>
+			<a href="index.html">Previous</a>
+		</button>
+		<button>
+			<a href="round-2.html">Next Round</a>
+		</button>
+
+		<div class="foot">
+			<footer>A guy named Vaughn made this in January 2023</footer>
+		</div>
 		<!-- Do not change the script source. Allows import/export to work. -->
 		<script src="./scripts/index.js" type="module"></script>
 	</body>
